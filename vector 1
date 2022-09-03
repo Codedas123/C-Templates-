@@ -1,3 +1,4 @@
+// input of a vector //
     int n;
     cin>>n;
     vector <int> v;
@@ -6,4 +7,4 @@
         cin>>x;
         v.push_back(x);
     }
-// input of a vector //
+
