@@ -6,3 +6,4 @@
         cin>>x;
         v.push_back(x);
     }
+// input of a vecror //
