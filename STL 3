@@ -43,4 +43,44 @@ return  "NO";
  
  // Upper bound of an element //
  int *ptr = upper_bound(a, a+n , 6);
+ 
+ // Minimum element of a vector //
+ 
+ int min = *min_element(v.begin() , v.end());
+ cout<<min<<endl;
+ 
+ // Maximum element of a vector //
+ 
+ int min = *max_element(v.begin() , v.end());
+ cout<<max<<endl;
+
+ // Sum  of a vector //
+ 
+ int sum = accumulate(v.begin() , v.end() , 0);
+ cout<<sum<<endl;
+ 
+  // Count  element of a vector //
+ 
+ int  ct = count (v.begin() , v.end() , 6);
+ cout<<ct<<endl;
+ 
+ // find a element in a vector  //
+ 
+ int element = *find(v.begin() , v.end() , 2);
+ cout<< element << endl;
+ 
+ // Reverse of a vector and string //
+ 
+ reverse(v.begin() , v.end());
+ for(auto val : v) {
+ cout<<val << " ";
+ }
+ cout<<endl;
+ }
+ string s;
+ cin>>s;
+ reverse(s.begin() , s.end());
+ cout<<s<<endl;
+ }
+ 
 
