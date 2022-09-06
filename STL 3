@@ -1,1 +1,46 @@
 
+// stack //
+
+stack<int> s;
+// insert element //
+s.push();
+// remove element //
+s.pop();
+// Print top element on the stack //
+s.top();
+
+// queue //
+
+queue<string> q;
+q.push(); // insert element //
+q.pop(); // remove element //
+q.front(); //print 1st element in fifo mechanism //
+
+// Check Balanced Parenthesis //
+
+unordered_map<char , int > symbols ={{'[' , -1} , {'{' , -2} , {'(' , -3} ,{']' , 1} , {'}' , 2} , {')' , 3}}
+string  isBalanced(string s){
+stack<char> st;
+for(char bracket : s){
+if(symbols[bracket] <0)
+st.push(bracket);
+}
+else{
+if(st.empty()) return "NO";
+char top = st.top();
+st.pop();
+if(symbols[top] + symbols[brackets] !=0)
+return "NO";
+}
+}
+}
+if(st.empty()) return "YES";
+return  "NO";
+
+
+ // Lower Bound of an element //
+ int *ptr = lower_bound(a, a+n, 5);
+ 
+ // Upper bound of an element //
+ int *ptr = upper_bound(a, a+n , 6);
+
