@@ -1,0 +1,29 @@
+// Print Binary Number //
+
+void printBinary( int num){
+for(int i=10; i>=0; --i){
+cout<< ((num>> i) & 1);
+}
+cout<< endl;
+}
+
+Check Set Bit //
+
+if((a&(i<<i)) !=0) {
+cout<<" Set Bit";
+
+// Set a Bit //
+
+PrintBinary( a|(1<<1));
+
+//bit Unset //
+
+printBinary(a&(~(1<<3)));
+
+// toggle //
+
+printBinary( a ^ (1<<2));
+
+// Count of Set Bits //
+
+cout<< __builtin_popcount(a) <<endl;
