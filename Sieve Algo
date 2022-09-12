@@ -37,3 +37,5 @@ cont<<"No"<<endl;
 }    // t/c --> nlog(log(n)) //
 
 
+
+
