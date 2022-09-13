@@ -24,17 +24,16 @@ graph2[v2].push_back({v1, wt});
 vector<int> g[N];
 bool vis[N];
 
-void dfs(int vertex){
-//
-cout<< vertex <<endl;
+bool dfs(int vertex){
+
  vis[vertex] = true;
 for(int child : g[vertex]){
   if(vis[child]) continue;
-//
+
 dfs(child);
-   //
+   
   }
-  //
+  return isLoopExists;
 }
 
 
